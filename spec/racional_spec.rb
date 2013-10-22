@@ -59,7 +59,10 @@ describe Fraccion do
 		it " # Se debe dividir dos fracciones con / y dar el resultado de forma reducida" do
 			(@f1 / @f2).to_s.should eq("7/4")
 		end
-	
-	
+	end
+	describe " # Operaciones comparacionales" do
+		it " #  Se debe de poder comprobar si una fracion es menor que otra" do
+			(@f1 < @f2).to_s.should != true
+		end
 	end
 end

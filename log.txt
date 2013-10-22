@@ -17,6 +17,26 @@ Fraccion
     # Se debe restar dos fracciones con - y dar el resultado de forma reducida
     # Se debe multiplicar dos fracciones con * y dar el resultado de forma reducida
     # Se debe dividir dos fracciones con / y dar el resultado de forma reducida
+  # Operaciones comparacionales
+    #  Se debe de poder comprobar si una fracion es menor que otra (FAILED - 1)
 
-Finished in 0.007 seconds
-12 examples, 0 failures
+Failures:
+
+  1) Fraccion  # Operaciones comparacionales  #  Se debe de poder comprobar si una fracion es menor que otra
+     Failure/Error: (@f1 < @f2).to_s.should != true
+     NoMethodError:
+       undefined method `<' for #<Fraccion:0x2fe57f8 @den=4, @num=3>
+     # ./spec/racional_spec.rb:65:in `block (3 levels) in <top (required)>'
+
+Finished in 0.02 seconds
+13 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/racional_spec.rb:64 # Fraccion  # Operaciones comparacionales  #  Se debe de poder comprobar si una fracion es menor
+que otra
+rake aborted!
+Command failed with status (1): [rspec -I. spec/racional_spec.rb --format d...]
+C:/Users/Dani/Documents/LPP/prct06/Rakefile:5:in `block in <top (required)>'
+Tasks: TOP => default => test
+(See full trace by running task with --trace)
