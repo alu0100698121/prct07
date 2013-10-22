@@ -30,7 +30,8 @@ describe Fraccion do
 	end
 	describe " #Operadores unarios" do
 		it " # Se debe calcular el valor absoluto de una fraccion con el metodo abs" do
-			@f3.abs.should == "2/3"
+			f_aux = @f3.abs
+			f_aux.to_s.should == "2/3"
 		end
 	end
 end

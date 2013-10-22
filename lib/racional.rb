@@ -31,6 +31,13 @@ class Fraccion
 		@num.to_f/@den.to_f
 	end
 	
-	
-
+	def abs
+		if @num < 0
+			@num = @num * (-1)
+		end
+		if @den < 0
+			@den = @den * (-1)
+		end
+		Fraccion.new(@num,@den)
+	end
 end
