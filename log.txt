@@ -17,6 +17,7 @@ Fraccion
     # Se debe restar dos fracciones con - y dar el resultado de forma reducida
     # Se debe multiplicar dos fracciones con * y dar el resultado de forma reducida
     # Se debe dividir dos fracciones con / y dar el resultado de forma reducida
+    # Se debe calcular el resto dos fracciones con % y dar el resultado de forma reducida (FAILED - 1)
   # Operaciones comparacionales
     # Se debe de poder comprobar si una fracion es menor que otra
     # Se debe de poder comprobar si una fracion es mayor que otra
@@ -25,5 +26,24 @@ Fraccion
     # Se debe de poder comprobar si una fracion es menor o igual que otra
     # Se debe de poder comprobar si una fracion es mayor o igual que otra
 
-Finished in 0.027 seconds
-18 examples, 0 failures
+Failures:
+
+  1) Fraccion  # Operaciones aritméticas  # Se debe calcular el resto dos fracciones con % y dar el resultado de forma reducida
+     Failure/Error: (@f1 % @f2).to_s.shold eq("0/1") # La divisi├│n de 2 fracciones deber├¡a dar el elemento nulo (0/1) en cualqui
+er caso
+     NoMethodError:
+       undefined method `%' for #<Fraccion:0x2f09af0 @den=4, @num=3>
+     # ./spec/racional_spec.rb:65:in `block (3 levels) in <top (required)>'
+
+Finished in 0.021 seconds
+19 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/racional_spec.rb:64 # Fraccion  # Operaciones aritméticas  # Se debe calcular el resto dos fracciones con % y dar el
+resultado de forma reducida
+rake aborted!
+Command failed with status (1): [rspec -I. spec/racional_spec.rb --format d...]
+C:/Users/Dani/Documents/LPP/prct06/Rakefile:5:in `block in <top (required)>'
+Tasks: TOP => default => test
+(See full trace by running task with --trace)
