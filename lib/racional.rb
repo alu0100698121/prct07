@@ -74,4 +74,11 @@ class Fraccion
 		Fraccion.new(@num*other.den - @den*other.num, @den*other.den) # a/b - c/d = (a*d - b*c)/(b*d)
 	end
 	
+	def *(other) # Operación producto
+		raise ArgumentError, 'Argumento no racional' unless other.is_a? Fraccion
+	
+		Fraccion.new(@num*other.num, @den*other.den) # a/b * c/d = (a*c)/(b*d)
+	end
+
+	
 end
