@@ -104,4 +104,10 @@ class Fraccion
 		(@num * other.den) > (@den * other.num) # a/b > c/d -> (a*d)/(b*d) > (c*b) /(b*d) -> a*d > c*b
 	end
 	
+	def ==(other) # Comparación igual 
+		raise ArgumentError, 'Argumento no racional' unless other.is_a? Fraccion
+	
+		(@num == other.num) and (@den == other.den) # a/b == c/d -> a == c && b == d # Se consideran a/b y c/d reducidas por initialize
+	end
+
 end
