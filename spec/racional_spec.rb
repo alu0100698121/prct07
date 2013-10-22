@@ -1,6 +1,9 @@
 require "lib/racional.rb"
 
 describe Fraccion do
+	before :each do
+		@f1 = Fraccion.new(3)
+	end
 	describe " # Almacenamiento de los valores de numerador y denominador" do
 		it " # Debe existir un numerador y debe ser accesible por el metodo num()" do
 			@f1.num().should eq(3)
