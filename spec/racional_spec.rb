@@ -24,7 +24,7 @@ describe Fraccion do
 		end
 		
 		it " # Se debe mostar por la consola la fraccion en formato flotante" do
-			@f1.to_f.should == "0.75"
+			@f1.to_f.should == 0.75
 		end
 		
 	end

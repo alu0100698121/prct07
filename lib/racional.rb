@@ -26,5 +26,9 @@ class Fraccion
 		@num = @num / mcd
 		@den = @den / mcd
 	end
+	
+	def to_f
+		@num.to_f/@den.to_f
+	end
 
 end

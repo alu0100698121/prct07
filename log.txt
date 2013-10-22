@@ -7,24 +7,7 @@ Fraccion
     # Debe de estar en su forma reducida
   # Formateo de fracciones
     # Se debe mostar por la consola la fraccion de la forma: a/b, donde a es el numerador y b el denominador
-    # Se debe mostar por la consola la fraccion en formato flotante (FAILED - 1)
-
-Failures:
-
-  1) Fraccion  # Formateo de fracciones  # Se debe mostar por la consola la fraccion en formato flotante
-     Failure/Error: @f1.to_f.should == "0.75"
-     NoMethodError:
-       undefined method `to_f' for 3/4:Fraccion
-     # ./spec/racional_spec.rb:27:in `block (3 levels) in <top (required)>'
+    # Se debe mostar por la consola la fraccion en formato flotante
 
 Finished in 0.005 seconds
-5 examples, 1 failure
-
-Failed examples:
-
-rspec ./spec/racional_spec.rb:26 # Fraccion  # Formateo de fracciones  # Se debe mostar por la consola la fraccion en formato flotante
-rake aborted!
-Command failed with status (1): [rspec -I. spec/racional_spec.rb --format d...]
-
-Tasks: TOP => default => test
-(See full trace by running task with --trace)
+5 examples, 0 failures
