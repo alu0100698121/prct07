@@ -9,7 +9,7 @@ describe Fraccion do
 			@f1.num().should eq(3)
 		end
 		
-		it " #Debe existir un denominador y debe ser accesible por el metodo den()" do
+		it " # Debe existir un denominador y debe ser accesible por el metodo den()" do
 			@f1.den().should eq(4)
 		end
 	end

@@ -1,10 +1,14 @@
 class Fraccion
-	def initialize(x)
-		@num = x
+	def initialize(x,y)
+		@num, @den = x, y
 	end
 	
 	def num()
 		@num
+	end
+	
+	def den()
+		@den
 	end
 
 end

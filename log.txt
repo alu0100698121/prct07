@@ -2,36 +2,8 @@ rspec -I. spec/racional_spec.rb --format documentation
 
 Fraccion
   # Almacenamiento de los valores de numerador y denominador
-    # Debe existir un numerador y debe ser accesible por el metodo num() (FAILED - 1)
-    #Debe existir un denominador y debe ser accesible por el metodo den() (FAILED - 2)
-
-Failures:
-
-  1) Fraccion  # Almacenamiento de los valores de numerador y denominador  # Debe existir un numerador y debe ser accesible por el metodo num()
-     Failure/Error: @f1 = Fraccion.new(3,4)
-     ArgumentError:
-       wrong number of arguments (2 for 1)
-     # ./lib/racional.rb:2:in `initialize'
-     # ./spec/racional_spec.rb:5:in `new'
-     # ./spec/racional_spec.rb:5:in `block (2 levels) in <top (required)>'
-
-  2) Fraccion  # Almacenamiento de los valores de numerador y denominador  #Debe existir un denominador y debe ser accesible por el metodo den()
-     Failure/Error: @f1 = Fraccion.new(3,4)
-     ArgumentError:
-       wrong number of arguments (2 for 1)
-     # ./lib/racional.rb:2:in `initialize'
-     # ./spec/racional_spec.rb:5:in `new'
-     # ./spec/racional_spec.rb:5:in `block (2 levels) in <top (required)>'
+    # Debe existir un numerador y debe ser accesible por el metodo num()
+    # Debe existir un denominador y debe ser accesible por el metodo den()
 
 Finished in 0.004 seconds
-2 examples, 2 failures
-
-Failed examples:
-
-rspec ./spec/racional_spec.rb:8 # Fraccion  # Almacenamiento de los valores de numerador y denominador  # Debe existir un numerador y debe ser accesible por el metodo num()
-rspec ./spec/racional_spec.rb:12 # Fraccion  # Almacenamiento de los valores de numerador y denominador  #Debe existir un denominador y debe ser accesible por el metodo den()
-rake aborted!
-Command failed with status (1): [rspec -I. spec/racional_spec.rb --format d...]
-
-Tasks: TOP => default => test
-(See full trace by running task with --trace)
+2 examples, 0 failures
