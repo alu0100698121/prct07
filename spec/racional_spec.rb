@@ -51,6 +51,10 @@ describe Fraccion do
 		it " # Se debe restar dos fracciones con - y dar el resultado de forma reducida" do
 			(@f1 - @f2).to_s.should eq("9/28")
 		end
+		
+		it " # Se debe multiplicar dos fracciones con * y dar el resultado de forma reducida" do
+			(@f1 * @f2).to_s.should eq("9/28")
+		end
 	
 	end
 end
