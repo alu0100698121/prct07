@@ -43,4 +43,9 @@ describe Fraccion do
 			(-@f1).to_s.should eq("-3/4")
 		end
 	end
+	describe " # Operaciones aritméticas" do
+		it " # Se debe sumar dos fracciones con + y dar el resultado de forma reducida" do
+			(@f1 + @f2).to_s.should eq("33/28")
+		end
+	end
 end
