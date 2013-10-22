@@ -21,6 +21,7 @@ Fraccion
     # Se debe de poder comprobar si una fracion es menor que otra
     # Se debe de poder comprobar si una fracion es mayor que otra
     # Se debe de poder comprobar si una fracion es igual que otra
+    #  Se debe de poder comprobar si una fracion es distinta de otra
 
 Finished in 0.02 seconds
-15 examples, 0 failures
+16 examples, 0 failures
