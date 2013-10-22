@@ -121,4 +121,11 @@ class Fraccion
 	
 		(self < other) or (self == other) # a/b <= c/d -> (a/b < c/d) || (a/b == c/d)
 	end
+	
+	def >=(other) # Comparación mayor o igual que
+		raise ArgumentError, 'Argumento no racional' unless other.is_a? Fraccion
+	
+		(self > other) or (self == other) # a/b >= c/d -> (a/b > c/d) || (a/b == c/d)
+	end
+
 end
