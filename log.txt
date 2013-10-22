@@ -1,6 +1,14 @@
-$ rake
 rspec -I. spec/racional_spec.rb --format documentation
-No examples found.
+C:/Users/Eliasib/Dropbox/3_Carrera/LPP/Practicas/prct06/spec/racional_spec.rb:3:in `<top (required)>': uninitialized constant Fraccion (NameError)
+        from C:/Ruby193/lib/ruby/gems/1.9.1/gems/rspec-core-2.14.6/lib/rspec/core/configuration.rb:896:in `load'
+        from C:/Ruby193/lib/ruby/gems/1.9.1/gems/rspec-core-2.14.6/lib/rspec/core/configuration.rb:896:in `block in load_spec_files'
+        from C:/Ruby193/lib/ruby/gems/1.9.1/gems/rspec-core-2.14.6/lib/rspec/core/configuration.rb:896:in `each'
+        from C:/Ruby193/lib/ruby/gems/1.9.1/gems/rspec-core-2.14.6/lib/rspec/core/configuration.rb:896:in `load_spec_files'
+        from C:/Ruby193/lib/ruby/gems/1.9.1/gems/rspec-core-2.14.6/lib/rspec/core/command_line.rb:22:in `run'
+        from C:/Ruby193/lib/ruby/gems/1.9.1/gems/rspec-core-2.14.6/lib/rspec/core/runner.rb:80:in `run'
+        from C:/Ruby193/lib/ruby/gems/1.9.1/gems/rspec-core-2.14.6/lib/rspec/core/runner.rb:17:in `block in autorun'
+rake aborted!
+Command failed with status (1): [rspec -I. spec/racional_spec.rb --format d...]
 
-Finished in 0.001 seconds
-0 examples, 0 failures
+Tasks: TOP => default => test
+(See full trace by running task with --trace)
