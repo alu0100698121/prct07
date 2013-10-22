@@ -5,6 +5,7 @@ describe Fraccion do
 		@f1 = Fraccion.new(3,4)
 		@f2 = Fraccion.new(6,14)
 		@f3 = Fraccion.new(-2,3)
+		@f4 = Fraccion.new(-6,-8) # == @f1
 	end
 	describe " # Almacenamiento de los valores de numerador y denominador" do
 		it " # Debe existir un numerador y debe ser accesible por el metodo num()" do
@@ -67,6 +68,10 @@ describe Fraccion do
 		
 		it " # Se debe de poder comprobar si una fracion es mayor que otra" do
 			(@f1 > @f2).should == true
+		end
+		
+		it " # Se debe de poder comprobar si una fracion es igual que otra" do
+			(@f1 == @f4).should == true
 		end
 	end
 end

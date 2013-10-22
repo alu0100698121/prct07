@@ -103,4 +103,5 @@ class Fraccion
 		# (@num.to_f/@den) > (other.num.to_f/other.den) 
 		(@num * other.den) > (@den * other.num) # a/b > c/d -> (a*d)/(b*d) > (c*b) /(b*d) -> a*d > c*b
 	end
+	
 end
