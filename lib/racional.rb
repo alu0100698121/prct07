@@ -89,6 +89,12 @@ class Fraccion
 		Fraccion.new(@num*other.den, @den*other.num) # a/b / c/d = (a*d)/(b*c)
 	end
 	
+		def %(other) # Operación módulo
+		raise ArgumentError, 'Argumento no racional' unless other.is_a? Fraccion
+	
+		Fraccion.new(0,1) # Resto de una división de fracciones = siempre nulo (0/1)
+	end
+	
 	# Operadores comparacionales
 	def <(other) # Comparación menor que
 		raise ArgumentError, 'Argumento no racional' unless other.is_a? Fraccion
