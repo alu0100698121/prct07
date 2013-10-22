@@ -40,4 +40,11 @@ class Fraccion
 		end
 		Fraccion.new(@num,@den)
 	end
+	
+	def reciprocal
+		aux = @num
+		@num = @den
+		@den = aux
+		Fraccion.new(@num,@den)
+	end
 end
