@@ -64,5 +64,9 @@ describe Fraccion do
 		it " #  Se debe de poder comprobar si una fracion es menor que otra" do
 			(@f3 < @f1).should == true
 		end
+		
+		it " # Se debe de poder comprobar si una fracion es mayor que otra" do
+			(@f1 > @f2).should == true
+		end
 	end
 end
