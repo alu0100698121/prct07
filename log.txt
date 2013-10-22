@@ -1,0 +1,6 @@
+$ rake
+rspec -I. spec/racional_spec.rb --format documentation
+No examples found.
+
+Finished in 0.001 seconds
+0 examples, 0 failures
