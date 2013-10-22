@@ -17,6 +17,9 @@ describe Fraccion do
 		it " # Debe de estar en su forma reducida" do
 			@f2.to_s.should eq("3/7")
 		end
-
+		
+		it " # Se debe mostar por la consola la fraccion de la forma: a/b, donde a es el numerador y b el denominador" do
+			@f1.to_s.should == "3/4"
+		end
 	end
 end
