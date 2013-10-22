@@ -23,6 +23,25 @@ Fraccion
     # Se debe de poder comprobar si una fracion es igual que otra
     # Se debe de poder comprobar si una fracion es distinta de otra
     # Se debe de poder comprobar si una fracion es menor o igual que otra
+    # Se debe de poder comprobar si una fracion es mayor o igual que otra (FAILED - 1)
 
-Finished in 0.02 seconds
-17 examples, 0 failures
+Failures:
+
+  1) Fraccion  # Operaciones comparacionales  # Se debe de poder comprobar si una fracion es mayor o igual que otra
+     Failure/Error: (@f1 >= @f4).should == true
+     NoMethodError:
+       undefined method `>=' for #<Fraccion:0x2f28168 @den=4, @num=3>
+     # ./spec/racional_spec.rb:86:in `block (3 levels) in <top (required)>'
+
+Finished in 0.018 seconds
+18 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/racional_spec.rb:85 # Fraccion  # Operaciones comparacionales  # Se debe de poder comprobar si una fracion es mayor o
+ igual que otra
+rake aborted!
+Command failed with status (1): [rspec -I. spec/racional_spec.rb --format d...]
+C:/Users/Dani/Documents/LPP/prct06/Rakefile:5:in `block in <top (required)>'
+Tasks: TOP => default => test
+(See full trace by running task with --trace)

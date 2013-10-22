@@ -81,5 +81,10 @@ describe Fraccion do
 		it " # Se debe de poder comprobar si una fracion es menor o igual que otra" do
 			(@f2 <= @f1).should == true
 		end
+		
+		it " # Se debe de poder comprobar si una fracion es mayor o igual que otra" do
+			(@f1 >= @f4).should == true
+		end
+	
 	end
 end
