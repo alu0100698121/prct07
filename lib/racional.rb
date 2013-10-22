@@ -115,4 +115,10 @@ class Fraccion
 	
 		not (self == other) # a/b != c/d -> a != c || b != d # Se consideran a/b y c/d reducidas por initialize
 	end
+	
+	def <=(other) # Comparación menor o igual que
+		raise ArgumentError, 'Argumento no racional' unless other.is_a? Fraccion
+	
+		(self < other) or (self == other) # a/b <= c/d -> (a/b < c/d) || (a/b == c/d)
+	end
 end

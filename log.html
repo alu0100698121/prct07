@@ -288,9 +288,9 @@ a {
   <dl style="margin-left: 15px;">
   <dt id="example_group_2" class="passed"> # Almacenamiento de los valores de numerador y denominador</dt>
     <script type="text/javascript">moveProgressBar('5.8');</script>
-    <dd class="example passed"><span class="passed_spec_name"> # Debe existir un numerador y debe ser accesible por el metodo num()</span><span class='duration'>0.00200s</span></dd>
+    <dd class="example passed"><span class="passed_spec_name"> # Debe existir un numerador y debe ser accesible por el metodo num()</span><span class='duration'>0.00300s</span></dd>
     <script type="text/javascript">moveProgressBar('11.7');</script>
-    <dd class="example passed"><span class="passed_spec_name"> # Debe existir un denominador y debe ser accesible por el metodo den()</span><span class='duration'>0.00000s</span></dd>
+    <dd class="example passed"><span class="passed_spec_name"> # Debe existir un denominador y debe ser accesible por el metodo den()</span><span class='duration'>0.00100s</span></dd>
     <script type="text/javascript">moveProgressBar('17.6');</script>
     <dd class="example passed"><span class="passed_spec_name"> # Debe de estar en su forma reducida</span><span class='duration'>0.00000s</span></dd>
   </dl>
@@ -301,7 +301,7 @@ a {
     <script type="text/javascript">moveProgressBar('23.5');</script>
     <dd class="example passed"><span class="passed_spec_name"> # Se debe mostar por la consola la fraccion de la forma: a/b, donde a es el numerador y b el denominador</span><span class='duration'>0.00000s</span></dd>
     <script type="text/javascript">moveProgressBar('29.4');</script>
-    <dd class="example passed"><span class="passed_spec_name"> # Se debe mostar por la consola la fraccion en formato flotante</span><span class='duration'>0.00100s</span></dd>
+    <dd class="example passed"><span class="passed_spec_name"> # Se debe mostar por la consola la fraccion en formato flotante</span><span class='duration'>0.00000s</span></dd>
   </dl>
 </div>
 <div id="div_group_4" class="example_group passed">
@@ -321,46 +321,30 @@ a {
     <script type="text/javascript">moveProgressBar('52.9');</script>
     <dd class="example passed"><span class="passed_spec_name"> # Se debe sumar dos fracciones con + y dar el resultado de forma reducida</span><span class='duration'>0.00000s</span></dd>
     <script type="text/javascript">moveProgressBar('58.8');</script>
-    <dd class="example passed"><span class="passed_spec_name"> # Se debe restar dos fracciones con - y dar el resultado de forma reducida</span><span class='duration'>0.00100s</span></dd>
+    <dd class="example passed"><span class="passed_spec_name"> # Se debe restar dos fracciones con - y dar el resultado de forma reducida</span><span class='duration'>0.00000s</span></dd>
     <script type="text/javascript">moveProgressBar('64.7');</script>
     <dd class="example passed"><span class="passed_spec_name"> # Se debe multiplicar dos fracciones con * y dar el resultado de forma reducida</span><span class='duration'>0.00000s</span></dd>
     <script type="text/javascript">moveProgressBar('70.5');</script>
-    <dd class="example passed"><span class="passed_spec_name"> # Se debe dividir dos fracciones con / y dar el resultado de forma reducida</span><span class='duration'>0.00000s</span></dd>
+    <dd class="example passed"><span class="passed_spec_name"> # Se debe dividir dos fracciones con / y dar el resultado de forma reducida</span><span class='duration'>0.00100s</span></dd>
   </dl>
 </div>
 <div id="div_group_6" class="example_group passed">
   <dl style="margin-left: 15px;">
   <dt id="example_group_6" class="passed"> # Operaciones comparacionales</dt>
     <script type="text/javascript">moveProgressBar('76.4');</script>
-    <dd class="example passed"><span class="passed_spec_name"> # Se debe de poder comprobar si una fracion es menor que otra</span><span class='duration'>0.00100s</span></dd>
+    <dd class="example passed"><span class="passed_spec_name"> # Se debe de poder comprobar si una fracion es menor que otra</span><span class='duration'>0.00000s</span></dd>
     <script type="text/javascript">moveProgressBar('82.3');</script>
     <dd class="example passed"><span class="passed_spec_name"> # Se debe de poder comprobar si una fracion es mayor que otra</span><span class='duration'>0.00000s</span></dd>
     <script type="text/javascript">moveProgressBar('88.2');</script>
     <dd class="example passed"><span class="passed_spec_name"> # Se debe de poder comprobar si una fracion es igual que otra</span><span class='duration'>0.00000s</span></dd>
     <script type="text/javascript">moveProgressBar('94.1');</script>
     <dd class="example passed"><span class="passed_spec_name"> # Se debe de poder comprobar si una fracion es distinta de otra</span><span class='duration'>0.00000s</span></dd>
-    <script type="text/javascript">makeRed('rspec-header');</script>
-    <script type="text/javascript">makeRed('div_group_6');</script>
-    <script type="text/javascript">makeRed('example_group_6');</script>
     <script type="text/javascript">moveProgressBar('100.0');</script>
-    <dd class="example failed">
-      <span class="failed_spec_name"> # Se debe de poder comprobar si una fracion es menor o igual que otra</span>
-      <span class="duration">0.00100s</span>
-      <div class="failure" id="failure_1">
-        <div class="message"><pre>undefined method `&lt;=&#39; for #&lt;Fraccion:0x2fefdd0 @den=7, @num=3&gt;</pre></div>
-        <div class="backtrace"><pre>./spec/racional_spec.rb:82:in `block (3 levels) in &lt;top (required)&gt;&#39;</pre></div>
-    <pre class="ruby"><code><span class="linenum">80</span>		
-<span class="linenum">81</span>		it " # Se debe de poder comprobar si una fracion es menor o igual que otra" do
-<span class="offending"><span class="linenum">82</span>			(@f2 <= @f1).should == true</span>
-<span class="linenum">83</span>		end
-<span class="linenum">84</span>	end
-<span class="linenum">85</span><span class="comment"># gem install syntax to get syntax highlighting</span></code></pre>
-      </div>
-    </dd>
+    <dd class="example passed"><span class="passed_spec_name"> # Se debe de poder comprobar si una fracion es menor o igual que otra</span><span class='duration'>0.00000s</span></dd>
   </dl>
 </div>
-<script type="text/javascript">document.getElementById('duration').innerHTML = "Finished in <strong>0.99706 seconds</strong>";</script>
-<script type="text/javascript">document.getElementById('totals').innerHTML = "17 examples, 1 failure";</script>
+<script type="text/javascript">document.getElementById('duration').innerHTML = "Finished in <strong>0.88705 seconds</strong>";</script>
+<script type="text/javascript">document.getElementById('totals').innerHTML = "17 examples, 0 failures";</script>
 </div>
 </div>
 </body>
