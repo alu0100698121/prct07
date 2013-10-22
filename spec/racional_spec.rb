@@ -33,5 +33,10 @@ describe Fraccion do
 			f_aux = @f3.abs
 			f_aux.to_s.should == "2/3"
 		end
+		
+		it " # Se debe calcular el reciproco de una fraccion con el metodo reciprocal" do
+			f_aux = @f1.reciprocal
+			f_aux.to_s.should == "4/3"
+		end
 	end
 end

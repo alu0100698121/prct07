@@ -10,6 +10,24 @@ Fraccion
     # Se debe mostar por la consola la fraccion en formato flotante
   #Operadores unarios
     # Se debe calcular el valor absoluto de una fraccion con el metodo abs
+    # Se debe calcular el reciproco de una fraccion con el metodo reciprocal (FAILED - 1)
 
-Finished in 0.017 seconds
-6 examples, 0 failures
+Failures:
+
+  1) Fraccion  #Operadores unarios  # Se debe calcular el reciproco de una fraccion con el metodo reciprocal
+     Failure/Error: f_aux = @f1.reciprocal
+     NoMethodError:
+       undefined method `reciprocal' for 3/4:Fraccion
+     # ./spec/racional_spec.rb:38:in `block (3 levels) in <top (required)>'
+
+Finished in 0.006 seconds
+7 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/racional_spec.rb:37 # Fraccion  #Operadores unarios  # Se debe calcular el reciproco de una fraccion con el metodo reciprocal
+rake aborted!
+Command failed with status (1): [rspec -I. spec/racional_spec.rb --format d...]
+
+Tasks: TOP => default => test
+(See full trace by running task with --trace)
