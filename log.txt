@@ -29,13 +29,13 @@ Fraccion
 Failures:
 
   1) Fraccion  # Operaciones aritméticas  # Se debe calcular el resto dos fracciones con % y dar el resultado de forma reducida
-     Failure/Error: (@f1 % @f2).to_s.shold eq("0/1") # La divisi├│n de 2 fracciones deber├¡a dar el elemento nulo (0/1) en cualqui
-er caso
+     Failure/Error: (@f1 % @f2).to_s.should eq("0/1") # La divisi├│n de 2 fracciones deber├¡a dar el elemento nulo (0/1) en cualqu
+ier caso
      NoMethodError:
-       undefined method `%' for #<Fraccion:0x2f09af0 @den=4, @num=3>
+       undefined method `%' for #<Fraccion:0x2e89a68 @den=4, @num=3>
      # ./spec/racional_spec.rb:65:in `block (3 levels) in <top (required)>'
 
-Finished in 0.021 seconds
+Finished in 0.022 seconds
 19 examples, 1 failure
 
 Failed examples:
