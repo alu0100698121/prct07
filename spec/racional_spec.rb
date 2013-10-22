@@ -62,7 +62,7 @@ describe Fraccion do
 	end
 	describe " # Operaciones comparacionales" do
 		it " #  Se debe de poder comprobar si una fracion es menor que otra" do
-			(@f1 < @f2).to_s.should != true
+			(@f3 < @f1).should == true
 		end
 	end
 end

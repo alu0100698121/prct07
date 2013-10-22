@@ -85,4 +85,11 @@ class Fraccion
 	
 		Fraccion.new(@num*other.den, @den*other.num) # a/b / c/d = (a*d)/(b*c)
 	end
+	
+	def <(other) # Comparación menor que
+		raise ArgumentError, 'Argumento no racional' unless other.is_a? Fraccion
+	
+		# (@num.to_f/@den) < (other.num.to_f/other.den)
+		(@num * other.den) < (@den * other.num) # a/b < c/d -> (a*d)/(b*d) < (c*b) /(b*d) -> a*d < c*b
+	end
 end
