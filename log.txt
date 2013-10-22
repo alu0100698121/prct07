@@ -14,25 +14,7 @@ Fraccion
     # Se debe calcular el opuesto de una fraccion con -
   # Operaciones aritméticas
     # Se debe sumar dos fracciones con + y dar el resultado de forma reducida
-    # Se debe restar dos fracciones con - y dar el resultado de forma reducida (FAILED - 1)
+    # Se debe restar dos fracciones con - y dar el resultado de forma reducida
 
-Failures:
-
-  1) Fraccion  # Operaciones aritméticas  # Se debe restar dos fracciones con - y dar el resultado de forma reducida
-     Failure/Error: (@f1 - @f2).to_s.should eq("9/28")
-     NoMethodError:
-       undefined method `-' for #<Fraccion:0x2e21428 @den=4, @num=3>
-     # ./spec/racional_spec.rb:52:in `block (3 levels) in <top (required)>'
-
-Finished in 0.015 seconds
-10 examples, 1 failure
-
-Failed examples:
-
-rspec ./spec/racional_spec.rb:51 # Fraccion  # Operaciones aritméticas  # Se debe restar dos fracciones con - y dar el resultado d
-e forma reducida
-rake aborted!
-Command failed with status (1): [rspec -I. spec/racional_spec.rb --format d...]
-C:/Users/Dani/Documents/LPP/prct06/Rakefile:5:in `block in <top (required)>'
-Tasks: TOP => default => test
-(See full trace by running task with --trace)
+Finished in 0.017 seconds
+10 examples, 0 failures
