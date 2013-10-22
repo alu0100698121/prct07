@@ -7,6 +7,15 @@ class Fraccion
 
 		@num, @den = x, y
 		reducir
+		
+		# En caso de ser negativa, la fracción será -a/b, y no a/(-b)
+		if(@num < 0 && @den < 0)
+			@num = -@num
+			@den = -@den
+		elsif(@den < 0)
+			@den = -@den
+			@num = -@num
+		end
 	end
 	
 	def num()
@@ -47,5 +56,10 @@ class Fraccion
 		@den = aux
 		Fraccion.new(@num,@den)
 	end
+	
+	def -@ # Operación negación
+		Fraccion.new(-@num, @den)
+	end
+
 	
 end
