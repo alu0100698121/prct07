@@ -12,6 +12,6 @@ end
 
 desc "Ejecutar el programa principal"
 task :bin do
-	sh "ruby ./lib/racional.rb"
+	sh "ruby -Ilib/ lib/racional.rb"
 end
 
