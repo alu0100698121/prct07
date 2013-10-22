@@ -30,5 +30,7 @@ class Fraccion
 	def to_f
 		@num.to_f/@den.to_f
 	end
+	
+	
 
 end

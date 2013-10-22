@@ -4,6 +4,7 @@ describe Fraccion do
 	before :each do
 		@f1 = Fraccion.new(3,4)
 		@f2 = Fraccion.new(6,14)
+		@f3 = Fraccion.new(-2,3)
 	end
 	describe " # Almacenamiento de los valores de numerador y denominador" do
 		it " # Debe existir un numerador y debe ser accesible por el metodo num()" do
@@ -26,6 +27,10 @@ describe Fraccion do
 		it " # Se debe mostar por la consola la fraccion en formato flotante" do
 			@f1.to_f.should == 0.75
 		end
-		
+	end
+	describe " #Operadores unarios" do
+		it " # Se debe calcular el valor absoluto de una fraccion con el metodo abs" do
+			@f3.abs.should == "2/3"
+		end
 	end
 end

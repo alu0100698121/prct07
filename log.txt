@@ -8,6 +8,25 @@ Fraccion
   # Formateo de fracciones
     # Se debe mostar por la consola la fraccion de la forma: a/b, donde a es el numerador y b el denominador
     # Se debe mostar por la consola la fraccion en formato flotante
+  #Operadores unarios
+    # Se debe calcular el valor absoluto de una fraccion con el metodo abs (FAILED - 1)
 
-Finished in 0.005 seconds
-5 examples, 0 failures
+Failures:
+
+  1) Fraccion  #Operadores unarios  # Se debe calcular el valor absoluto de una fraccion con el metodo abs
+     Failure/Error: @f3.abs.should == "2/3"
+     NoMethodError:
+       undefined method `abs' for -2/3:Fraccion
+     # ./spec/racional_spec.rb:33:in `block (3 levels) in <top (required)>'
+
+Finished in 0.004 seconds
+6 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/racional_spec.rb:32 # Fraccion  #Operadores unarios  # Se debe calcular el valor absoluto de una fraccion con el metodo abs
+rake aborted!
+Command failed with status (1): [rspec -I. spec/racional_spec.rb --format d...]
+
+Tasks: TOP => default => test
+(See full trace by running task with --trace)
