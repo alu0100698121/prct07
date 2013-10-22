@@ -4,6 +4,27 @@ Fraccion
   # Almacenamiento de los valores de numerador y denominador
     # Debe existir un numerador y debe ser accesible por el metodo num()
     # Debe existir un denominador y debe ser accesible por el metodo den()
+    # Debe de estar en su forma reducida (FAILED - 1)
 
-Finished in 0.004 seconds
-2 examples, 0 failures
+Failures:
+
+  1) Fraccion  # Almacenamiento de los valores de numerador y denominador  # Debe de estar en su forma reducida
+     Failure/Error: @f2.to_s.should eq("3/7")
+
+       expected: "3/7"
+            got: "#<Fraccion:0x2f88990>"
+
+       (compared using ==)
+     # ./spec/racional_spec.rb:18:in `block (3 levels) in <top (required)>'
+
+Finished in 0.013 seconds
+3 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/racional_spec.rb:17 # Fraccion  # Almacenamiento de los valores de numerador y denominador  # Debe de estar en su forma reducida
+rake aborted!
+Command failed with status (1): [rspec -I. spec/racional_spec.rb --format d...]
+
+Tasks: TOP => default => test
+(See full trace by running task with --trace)
