@@ -11,6 +11,24 @@ Fraccion
   #Operadores unarios
     # Se debe calcular el valor absoluto de una fraccion con el metodo abs
     # Se debe calcular el reciproco de una fraccion con el metodo reciprocal
+    # Se debe calcular el opuesto de una fraccion con - (FAILED - 1)
 
-Finished in 0.007 seconds
-7 examples, 0 failures
+Failures:
+
+  1) Fraccion  #Operadores unarios  # Se debe calcular el opuesto de una fraccion con -
+     Failure/Error: (-@f1).to_s.should eq("-3/4")
+     NoMethodError:
+       undefined method `-@' for #<Fraccion:0x2a0fdb0 @den=4, @num=3>
+     # ./spec/racional_spec.rb:43:in `block (3 levels) in <top (required)>'
+
+Finished in 0.017 seconds
+8 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/racional_spec.rb:42 # Fraccion  #Operadores unarios  # Se debe calcular el opuesto de una fraccion con -
+rake aborted!
+Command failed with status (1): [rspec -I. spec/racional_spec.rb --format d...]
+C:/Users/Dani/Documents/LPP/prct06/Rakefile:5:in `block in <top (required)>'
+Tasks: TOP => default => test
+(See full trace by running task with --trace)

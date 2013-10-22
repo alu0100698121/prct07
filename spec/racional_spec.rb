@@ -38,5 +38,9 @@ describe Fraccion do
 			f_aux = @f1.reciprocal
 			f_aux.to_s.should == "4/3"
 		end
+		
+		it " # Se debe calcular el opuesto de una fraccion con -" do
+			(-@f1).to_s.should eq("-3/4")
+		end
 	end
 end

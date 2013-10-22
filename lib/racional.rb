@@ -47,4 +47,5 @@ class Fraccion
 		@den = aux
 		Fraccion.new(@num,@den)
 	end
+	
 end
