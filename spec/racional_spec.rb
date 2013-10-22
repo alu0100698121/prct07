@@ -28,7 +28,7 @@ describe Fraccion do
 			@f1.to_f.should == 0.75
 		end
 	end
-	describe " #Operadores unarios" do
+	describe " # Operadores unarios" do
 		it " # Se debe calcular el valor absoluto de una fraccion con el metodo abs" do
 			f_aux = @f3.abs
 			f_aux.to_s.should == "2/3"
@@ -61,7 +61,7 @@ describe Fraccion do
 		end
 	end
 	describe " # Operaciones comparacionales" do
-		it " #  Se debe de poder comprobar si una fracion es menor que otra" do
+		it " # Se debe de poder comprobar si una fracion es menor que otra" do
 			(@f3 < @f1).should == true
 		end
 		
