@@ -74,7 +74,7 @@ describe Fraccion do
 			(@f1 == @f4).should == true
 		end
 		
-		it " #  Se debe de poder comprobar si una fracion es distinta de otra" do
+		it " # Se debe de poder comprobar si una fracion es distinta de otra" do
 			(@f1 != @f4).should_not == true
 		end
 	end

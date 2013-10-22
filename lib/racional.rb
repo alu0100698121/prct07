@@ -110,4 +110,9 @@ class Fraccion
 		(@num == other.num) and (@den == other.den) # a/b == c/d -> a == c && b == d # Se consideran a/b y c/d reducidas por initialize
 	end
 
+	def !=(other)
+		raise ArgumentError, 'Argumento no racional' unless other.is_a? Fraccion
+	
+		not (self == other) # a/b != c/d -> a != c || b != d # Se consideran a/b y c/d reducidas por initialize
+	end
 end
