@@ -61,5 +61,11 @@ class Fraccion
 		Fraccion.new(-@num, @den)
 	end
 
+	def +(other) # Operación suma
+		# Si no es un numero racional, genera una excepcion
+		raise ArgumentError, 'Argumento no racional' unless other.is_a? Fraccion
+	 
+		Fraccion.new(@num*other.den + @den*other.num, @den*other.den) # a/b + c/d = (a*d + b*c)/(b*d)
+	end
 	
 end
