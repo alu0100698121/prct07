@@ -5,7 +5,26 @@ Fraccion
     # Debe existir un numerador y debe ser accesible por el metodo num()
     # Debe existir un denominador y debe ser accesible por el metodo den()
     # Debe de estar en su forma reducida
+  # Formateo de fracciones
     # Se debe mostar por la consola la fraccion de la forma: a/b, donde a es el numerador y b el denominador
+    # Se debe mostar por la consola la fraccion en formato flotante (FAILED - 1)
 
-Finished in 0.007 seconds
-4 examples, 0 failures
+Failures:
+
+  1) Fraccion  # Formateo de fracciones  # Se debe mostar por la consola la fraccion en formato flotante
+     Failure/Error: @f1.to_f.should == "0.75"
+     NoMethodError:
+       undefined method `to_f' for 3/4:Fraccion
+     # ./spec/racional_spec.rb:27:in `block (3 levels) in <top (required)>'
+
+Finished in 0.005 seconds
+5 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/racional_spec.rb:26 # Fraccion  # Formateo de fracciones  # Se debe mostar por la consola la fraccion en formato flotante
+rake aborted!
+Command failed with status (1): [rspec -I. spec/racional_spec.rb --format d...]
+
+Tasks: TOP => default => test
+(See full trace by running task with --trace)
