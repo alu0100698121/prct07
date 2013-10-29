@@ -1,4 +1,4 @@
-rspec -I. spec/racional_spec.rb --format documentation
+﻿rspec -I. spec/racional_spec.rb --format documentation
 
 Fraccion
   # Almacenamiento de los valores de numerador y denominador
@@ -6,7 +6,8 @@ Fraccion
     # Debe existir un denominador y debe ser accesible por el metodo den()
     # Debe de estar en su forma reducida
   # Formateo de fracciones
-    # Se debe mostar por la consola la fraccion de la forma: a/b, donde a es el numerador y b el denominador
+    # Se debe mostar por la consola la fraccion de la forma: a/b, donde a es el
+numerador y b el denominador
     # Se debe mostar por la consola la fraccion en formato flotante
   # Operadores unarios
     # Se debe calcular el valor absoluto de una fraccion con el metodo abs
@@ -15,9 +16,11 @@ Fraccion
   # Operaciones aritméticas
     # Se debe sumar dos fracciones con + y dar el resultado de forma reducida
     # Se debe restar dos fracciones con - y dar el resultado de forma reducida
-    # Se debe multiplicar dos fracciones con * y dar el resultado de forma reducida
+    # Se debe multiplicar dos fracciones con * y dar el resultado de forma reduc
+ida
     # Se debe dividir dos fracciones con / y dar el resultado de forma reducida
-    # Se debe calcular el resto dos fracciones con % y dar el resultado de forma reducida
+    # Se debe calcular el resto dos fracciones con % y dar el resultado de forma
+ reducida
   # Operaciones comparacionales
     # Se debe de poder comprobar si una fracion es menor que otra
     # Se debe de poder comprobar si una fracion es mayor que otra
@@ -26,5 +29,5 @@ Fraccion
     # Se debe de poder comprobar si una fracion es menor o igual que otra
     # Se debe de poder comprobar si una fracion es mayor o igual que otra
 
-Finished in 0.024 seconds
+Finished in 0.01 seconds
 19 examples, 0 failures

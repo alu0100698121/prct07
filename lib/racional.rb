@@ -1,9 +1,12 @@
 require "gcd.rb"
 
 class Fraccion
+	# Módulos usados
+	include Comparable
+
 	# Métodos principales
 	def initialize(x,y)
-		raise ArgumentError , 'Argumentos no enteros.' unless x.is_a? Integer and y.is_a? Integer
+		raise ArgumentError , 'Argumentos no enteros.' unless x.is_a? Fixnum and y.is_a? Fixnum
         raise ArgumentError , 'Denominador nulo.' unless y != 0
 
 		@num, @den = x, y
@@ -43,13 +46,14 @@ class Fraccion
 	
 	# Operadores unarios
 	def abs
+	    a, b = @num, @den
 		if @num < 0
-			@num = @num * (-1)
+			a = @num * (-1)
 		end
 		if @den < 0
-			@den = @den * (-1)
+			b = @den * (-1)
 		end
-		Fraccion.new(@num,@den)
+		Fraccion.new(a.to_i,b.to_i)
 	end
 	
 	def reciprocal
@@ -89,13 +93,18 @@ class Fraccion
 		Fraccion.new(@num*other.den, @den*other.num) # a/b / c/d = (a*d)/(b*c)
 	end
 	
-		def %(other) # Operación módulo
+	def %(other) # Operación módulo
 		raise ArgumentError, 'Argumento no racional' unless other.is_a? Fraccion
 	
 		Fraccion.new(0,1) # Resto de una división de fracciones = siempre nulo (0/1)
 	end
 	
-	# Operadores comparacionales
-
+		# Operadores comparacionales
+	def <=> (other)
+		raise ArgumentError, 'Argumento no racional' unless other.is_a? Fraccion
+		
+		# a/b <=> c/d -> (a*d)/(b*d) <=> (c*b)/(d*b) -> a*d <=> c*b
+		(@num * other.den) <=> (other.num * @den)
+	end
 
 end
