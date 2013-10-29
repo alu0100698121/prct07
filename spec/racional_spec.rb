@@ -1,4 +1,4 @@
-require "lib/racional.rb"
+require 'lib/racional.rb'
 
 describe Fraccion do
 	before :each do
